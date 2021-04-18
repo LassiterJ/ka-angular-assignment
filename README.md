@@ -3,6 +3,6 @@ This is a very basic application created as part of a take-home interview assign
 
 ### Install both backend and frontend with yarn or npm. (Generates yarn.lock or package-json.lock respectively)
 
-###Start backend then frontend 
+### Start backend then frontend 
 - cd bookshelf-backend/ -> yarn start
 - cd my-app/ -> yarn start
