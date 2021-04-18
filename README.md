@@ -6,3 +6,6 @@ This is a very basic application created as part of a take-home interview assign
 ### Start backend then frontend 
 - cd bookshelf-backend/ -> yarn start
 - cd my-app/ -> yarn start
+
+### Open http://localhost:3000 to view frontend and interact with the Angular app
+### Open http://localhost:4200 too view raw data served by Nest backend
