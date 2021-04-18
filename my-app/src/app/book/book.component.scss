@@ -1,0 +1,49 @@
+:host {
+  border-radius: 3px;
+  padding: 1rem;
+  margin: .5rem;
+  max-width: 25rem;
+  background-color: whitesmoke;
+  color:black;
+}
+:host(.active){
+border:2px solid orange;
+  position: absolute;
+  z-index: 10;
+}
+.book{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  &-info{
+    padding-left: 1.5rem;
+  }
+  &-title {
+    font-weight: 400;
+    font-family: "Apple SD Gothic Neo", sans-serif;
+
+  }
+  &-description {
+    font-size: .5rem;
+    padding: 1em;
+    font-weight: normal;
+  }
+  &-label {
+    font-weight: bold;
+    font-size: .75rem;
+  }
+  &-moreinfo {
+    font-size: small;
+    li {
+      list-style-type: none;
+      font-weight: bold;
+      padding-right: .1em;
+      span, a {
+font-weight: lighter;
+      }
+    }
+  }
+}
+

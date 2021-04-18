@@ -1,0 +1,34 @@
+  <article class="book">
+    <div class="book-heading">
+    <h4 class="book-title">{{ book.title }}</h4>
+    <h6 class="book-subtitle">{{ book.subtitle }}</h6>
+    </div>
+    <div class = "book-info">
+    <label class="book-label">
+      Description:
+      <p class="book-description">{{ book.description }}</p>
+    </label>
+    <ul *ngIf="showMoreInfo" class="book-moreinfo">
+      <li>
+        ISBN: <span>{{ book.isbn }}</span>
+      </li>
+      <li>
+        Author: <span>{{ book.author }}</span>
+      </li>
+      <li>
+        Number of Pages: <span>{{ book.pages }}</span>
+      </li>
+      <li>
+        Published: <span>{{ book.published }}</span>
+      </li>
+      <li>
+        Publisher: <span>{{ book.publisher }}</span>
+      </li>
+      <li>
+        Website: <a [href]="book.website">{{ book.website }}</a>
+      </li>
+    </ul>
+    </div>
+    <button (click)="onMoreInfoToggle()">{{infoButtonText}}</button>
+  </article>
+
